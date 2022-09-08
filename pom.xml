@@ -16,6 +16,7 @@
         <!-- версия Aspectj -->
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <javafaker.version>0.15</javafaker.version>
     </properties>
     <dependencies>
         <!-- модуль взаимодействия Allure и Junit -->
@@ -23,6 +24,11 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit4</artifactId>
             <version>${allure.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${javafaker.version}</version>
         </dependency>
         <dependency>
             <!-- модуль взаимодействия Allure и RestAssured -->
